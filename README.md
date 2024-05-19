@@ -135,6 +135,7 @@ y1 = customers_1[['Segmentation']].values
 one_hot_enc = OneHotEncoder()
 
 one_hot_enc.fit(y1)
+y= one_hot_enc.transform(y1).toarray()
 y1.shape
 y.shape
 y1[0]
